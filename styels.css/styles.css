@@ -1,0 +1,361 @@
+:root {
+  --main-color: #1f1d2c;
+  --accent-color: #f1a600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/Vectores/Rectangle\ 34-1.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--main-color);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+
+
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  height: 50px;
+
+}
+
+nav>div img {
+  width: 1.5rem;
+}
+
+input#menu {
+  visibility: hidden;
+}
+
+input#menu~ul {
+  width: 100%;
+  list-style: none;
+  height: 100%;
+  position: absolute;
+  right: 100%;
+  transition: all 400ms linear;
+  z-index: 100;
+}
+
+input#menu~ul :first-child {
+
+  color: var(--accent-color);
+}
+
+input#menu:checked~ul {
+  right: 0;
+}
+
+#section-me {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+#section-me>div {
+  position: absolute;
+  left: 0;
+  padding: 1rem;
+}
+
+#section-me h1 {
+  align-items: flex-start;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: -12rem;
+}
+
+#section-me h1+p {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+#section-me p>span {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+#section-me>img {
+  display: flex;
+  width: 254px;
+  height: 365px;
+  padding: .5rem;
+  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-top: 6rem;
+}
+
+.social-icon {
+  margin-top: 1rem
+}
+
+.social-icon>.social-icon {
+  margin-right: 1rem;
+  width: 24px;
+}
+
+#personal-section {
+  background-image: url(../assets/Vectores/Rectangle\ 33.svg);
+  text-align: center;
+  padding: 1.5rem;
+
+
+}
+#personal-section>h2{
+  font-size: 32px;
+}
+
+.academic-form {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-around;
+
+
+}
+
+
+
+#personal-experience {
+  justify-content: flex-end;
+  text-align: center;
+  padding: 1.5rem;
+
+}
+#personal-experience>h2{
+  font-size: 32px;
+}
+
+.experience {
+  display: flex;
+  padding: 1rem 0;
+  text-align: left;
+  padding: 1.5rem;
+  flex-direction: column;
+  background-image: url(../assets/Vectores/Group\ 35.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 1rem;
+
+}
+
+.laboral {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+
+  align-items: center;
+
+
+}
+
+.laboral p {
+  margin-bottom: .5rem;
+  align-items: right;
+  margin-left: 2rem;
+  opacity: 70%;
+
+}
+.laboral span {
+    font-size: 18px;
+}
+
+.laboral p+p {
+  margin-bottom: .5rem;
+  align-items: right;
+  margin-left: 3.5rem;
+    font-size: 18px;
+}
+
+.laboral>img {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+
+}
+
+#personal-abilities {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/Vectores/Rectangle\ 34-1.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-right: 1rem;
+}
+
+.competence {
+  display: grid;
+  position: relative;
+  grid-template-columns: 60% 60%;
+  margin-left: 1rem;
+
+
+
+}
+.competence>p{
+  font-size: 18px;
+  width: 400;
+}
+
+#personal-abilities h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+#personal-abilities h3 {
+  padding: 1rem 0;
+  color: var(--accent-color);
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.competence>p {
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  align-items: center;
+}
+
+#personal-portafolio {
+  position: relative;
+  display: flex;
+ 
+  flex-direction: column;
+}
+
+#personal-portafolio>h3 {
+  text-align: center;
+  justify-content: center;
+  padding: .5rem;
+font-size: 32px;
+}
+
+.first-proyect {
+
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/Vectores/Rectangle\ 33-1.svg);
+  background-repeat: no-repeat;
+  background-position: left  1rem top;
+  padding: 1.5rem;
+}
+
+.first-proyect>img {
+  display: flex;
+  text-align: left;
+  padding: .5rem;
+  width:360PX;
+  height:345px;
+ 
+}
+
+.second-proyect {
+
+  display: flex;
+  padding: .5rem;
+  flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.second-proyect>img {
+  display: flex;
+  text-align: center;
+  padding: .5rem;
+  width:360PX;
+  height:318px;
+
+}
+
+.third-proyect {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  background-image: url(../assets/Vectores/Rectangle\ 33-1.svg);
+  background-repeat: no-repeat;
+  background-position: left 1rem top;
+   margin-right: 7rem;
+
+
+}
+
+.third-proyect>img {
+  display: flex;
+  text-align: right;
+  width:360PX;
+  height:322px;
+  
+}
+
+.footer-contact {
+  display: grid;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  margin-left: 3rem;
+  place-items: center;
+
+}
+
+#contact-me>h4{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 32px;
+ 
+
+}
+.footer-contact>p+p{
+justify-content:left;
+margin-left:.5rem;
+}
+.footer-contact>img {
+  width: 40px;
+   padding:2rem,
+
+}
+
+/*
+@media only screen and (min-width: 1000px) {
+  #section-me h1 {
+    font-size: 150px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: -12rem;
+
+  }
+  h2 {
+    font-size: 50px;
+    
+ 
+  }
+  #personal-section {
+     font-size: 45px;
+
+  }
+ 
+  
+
+  input#menu~ul {
+    position: static;
+    display: flex;
+  }
+
+  input#menu~ul>li {
+    padding: 0 3rem;
+    margin: 0.5rem;
+  }
+}*/
