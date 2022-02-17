@@ -1,5 +1,5 @@
 :root {
-  --main-color: #1f1d2c;
+  --main-color: #32385D;
   --accent-color: #f1a600;
 }
 
@@ -32,6 +32,7 @@ nav {
 
 nav>div img {
   width: 1.5rem;
+  
 }
 
 input#menu {
@@ -46,15 +47,21 @@ input#menu~ul {
   right: 100%;
   transition: all 400ms linear;
   z-index: 100;
+  background-color: rgb(3, 17, 43);
+  opacity: 98%;
+ 
 }
 
 input#menu~ul :first-child {
 
   color: var(--accent-color);
+ 
+  
 }
 
 input#menu:checked~ul {
   right: 0;
+  margin-left: .3rem;
 }
 
 #section-me {
@@ -65,13 +72,15 @@ input#menu:checked~ul {
   padding: 1.25rem;
 }
 
-#section-me>div {
+.information {
   position: absolute;
   left: 0;
   padding: 1rem;
+  margin-left: .2rem;
+  padding-left: .2rem;
 }
 
-#section-me h1 {
+.information h1 {
   align-items: flex-start;
   font-size: 50px;
   font-weight: 600;
@@ -79,12 +88,13 @@ input#menu:checked~ul {
   margin-top: -12rem;
 }
 
-#section-me h1+p {
+.information h1+p {
   font-size: 18px;
   margin-bottom: 1rem;
+  
 }
 
-#section-me p>span {
+.information p>span {
   color: var(--accent-color);
   margin-bottom: 1rem;
 }
@@ -97,37 +107,60 @@ input#menu:checked~ul {
   margin-left: 1rem;
   margin-right: .5rem;
   margin-top: 6rem;
+  
+}
+.social-icon{
+  position: absolute;
+  display: flex;
+  left: 0;
+  padding-left: .5rem;
 }
 
-.social-icon {
-  margin-top: 1rem
-}
-
-.social-icon>.social-icon {
+.social-icon>.social {
   margin-right: 1rem;
   width: 24px;
 }
+
+  
+
+
 
 #personal-section {
   background-image: url(../assets/Vectores/Rectangle\ 33.svg);
   text-align: center;
   padding: 1.5rem;
-
+ display: contents;
 
 }
-#personal-section>h2{
+
+#personal-section>h2 {
   font-size: 32px;
 }
 
 .academic-form {
   display: flex;
   padding: 1rem 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin:  0;
 
 
 }
 
 
+
+.academic-certificate1>img {
+  width: 163px;
+  height: 207px;
+}
+
+.academic-certificate>p {
+  font-size: 18px;
+}
+
+.academic-certificate p+p {
+  opacity: 60%;
+
+}
 
 #personal-experience {
   justify-content: flex-end;
@@ -135,7 +168,8 @@ input#menu:checked~ul {
   padding: 1.5rem;
 
 }
-#personal-experience>h2{
+
+#personal-experience>h2 {
   font-size: 32px;
 }
 
@@ -166,19 +200,22 @@ input#menu:checked~ul {
   margin-bottom: .5rem;
   align-items: right;
   margin-left: 2rem;
-  opacity: 70%;
+ opacity: 70%;
 
 }
+
 .laboral span {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .laboral p+p {
   margin-bottom: .5rem;
   align-items: right;
   margin-left: 3.5rem;
-    font-size: 18px;
+  font-size: 18px;
+ 
 }
+
 
 .laboral>img {
   display: flex;
@@ -192,20 +229,21 @@ input#menu:checked~ul {
   flex-direction: column;
   background-image: url(../assets/Vectores/Rectangle\ 34-1.svg);
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left .2rem top;
   margin-right: 1rem;
 }
 
 .competence {
   display: grid;
   position: relative;
-  grid-template-columns: 60% 60%;
+  grid-template-columns: 40% 60%;
   margin-left: 1rem;
 
 
 
 }
-.competence>p{
+
+.competence>p {
   font-size: 18px;
   width: 400;
 }
@@ -233,7 +271,8 @@ input#menu:checked~ul {
 #personal-portafolio {
   position: relative;
   display: flex;
- 
+  padding: .5rem;
+
   flex-direction: column;
 }
 
@@ -241,26 +280,26 @@ input#menu:checked~ul {
   text-align: center;
   justify-content: center;
   padding: .5rem;
-font-size: 32px;
+  font-size: 32px;
 }
 
 .first-proyect {
-
   display: flex;
   flex-direction: column;
   background-image: url(../assets/Vectores/Rectangle\ 33-1.svg);
   background-repeat: no-repeat;
-  background-position: left  1rem top;
+  background-position: left 1rem top;
   padding: 1.5rem;
+  width: auto;
 }
 
 .first-proyect>img {
   display: flex;
   text-align: left;
   padding: .5rem;
-  width:360PX;
-  height:345px;
- 
+  width: 340PX;
+
+
 }
 
 .second-proyect {
@@ -268,16 +307,18 @@ font-size: 32px;
   display: flex;
   padding: .5rem;
   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 
 .second-proyect>img {
   display: flex;
   text-align: center;
+
   padding: .5rem;
-  width:360PX;
-  height:318px;
+  width: 360PX;
+  height: 318px;
 
 }
 
@@ -288,7 +329,8 @@ font-size: 32px;
   background-image: url(../assets/Vectores/Rectangle\ 33-1.svg);
   background-repeat: no-repeat;
   background-position: left 1rem top;
-   margin-right: 7rem;
+  margin-right: 7rem;
+  width: auto;
 
 
 }
@@ -296,46 +338,61 @@ font-size: 32px;
 .third-proyect>img {
   display: flex;
   text-align: right;
-  width:360PX;
-  height:322px;
-  
+  width: 340PX;
+  height: 322px;
+
 }
 
 .footer-contact {
-  display: grid;
+  display: flex;
   position: relative;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 30%;
   margin-left: 3rem;
   place-items: center;
+  justify-content: space-between;
+}
+.footer-contact>div{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 
 }
 
-#contact-me>h4{
+#contact-me>h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
   font-size: 32px;
- 
+
 
 }
-.footer-contact>p+p{
-justify-content:left;
-margin-left:.5rem;
+
+.footer-contact>p+p {
+  justify-content: left;
+  margin-left: .5rem;
 }
-.footer-contact>img {
+
+.footer-contact div~img {
   width: 40px;
-   padding:2rem,
+  padding: 2rem,
 
 }
 
-/*
-@media only screen and (min-width: 1000px) {
+
+@media only screen and (min-width: 800px) {
   #section-me h1 {
     font-size: 150px;
     font-weight: 600;
     margin-bottom: 1rem;
     margin-top: -12rem;
 
+  }
+  .social-icon {
+    position: absolute;
+    display: flex;
+    left: 0;
+    margin-top: 8rem;
+    padding-left: .5rem;
   }
   h2 {
     font-size: 50px;
@@ -347,15 +404,23 @@ margin-left:.5rem;
 
   }
  
-  
+   label{
+     display: none;
+   }
 
   input#menu~ul {
     position: static;
     display: flex;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    
   }
 
   input#menu~ul>li {
-    padding: 0 3rem;
+    padding: 0 .5rem;
     margin: 0.5rem;
+    font: size 45px;
   }
-}*/
+}
