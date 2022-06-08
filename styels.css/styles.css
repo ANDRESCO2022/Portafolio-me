@@ -137,15 +137,17 @@ input#menu:checked~ul {
 }
 
 .social-icon {
-  position: absolute;
   display: flex;
+  position:absolute;
   left: 0;
   padding-left: .5rem;
+  width: 10px;
+  margin-top: 10rem;
 }
 
-.social-icon>.social {
+.social-icon> a> img {
   margin-right: 1rem;
-  width: 24px;
+    width: 40px;
 }
 
 
@@ -417,13 +419,7 @@ input#menu:checked~ul {
 
   }
 
-  .social-icon {
-    position: absolute;
-    display: flex;
-    left: 0;
-    margin-top: 8rem;
-    padding-left: .5rem;
-  }
+
 
   h2 {
     font-size: 50px;
@@ -474,6 +470,9 @@ input#menu:checked~ul {
     font-size: 18px;
 
 
+  }
+  .social-icon>a>img {
+    width: 100px;
   }
 
   .container-phone>img {
